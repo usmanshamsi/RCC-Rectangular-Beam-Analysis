@@ -8,3 +8,7 @@ G:\My Drive\GitHub\RCC-Rectangular-Beam-Analysis\RCC-Rectangular-Beam-Analysis\o
 G:\My Drive\GitHub\RCC-Rectangular-Beam-Analysis\RCC-Rectangular-Beam-Analysis\obj\x86\Debug\RCC-Rectangular-Beam-Analysis.xml
 G:\My Drive\GitHub\RCC-Rectangular-Beam-Analysis\RCC-Rectangular-Beam-Analysis\obj\x86\Debug\RCC-Rectangular-Beam-Analysis.pdb
 G:\My Drive\GitHub\RCC-Rectangular-Beam-Analysis\RCC-Rectangular-Beam-Analysis\obj\x86\Debug\RCC_Rectangular_Beam_Analysis.AboutForm.resources
+G:\My Drive\GitHub\RCC-Rectangular-Beam-Analysis\RCC-Rectangular-Beam-Analysis\bin\Debug\RCC-Rectangular-Beam-Analysis.exe.manifest
+G:\My Drive\GitHub\RCC-Rectangular-Beam-Analysis\RCC-Rectangular-Beam-Analysis\bin\Debug\RCC-Rectangular-Beam-Analysis.application
+G:\My Drive\GitHub\RCC-Rectangular-Beam-Analysis\RCC-Rectangular-Beam-Analysis\obj\x86\Debug\RCC-Rectangular-Beam-Analysis.exe.manifest
+G:\My Drive\GitHub\RCC-Rectangular-Beam-Analysis\RCC-Rectangular-Beam-Analysis\obj\x86\Debug\RCC-Rectangular-Beam-Analysis.application
