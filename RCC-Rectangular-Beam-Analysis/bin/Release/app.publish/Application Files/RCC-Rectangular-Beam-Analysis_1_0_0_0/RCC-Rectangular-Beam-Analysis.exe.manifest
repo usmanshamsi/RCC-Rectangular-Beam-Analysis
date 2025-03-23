@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="RCC-Rectangular-Beam-Analysis.exe" version="1.0.0.0" publicKeyToken="b8142d055bcf96c0" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RCC-Rectangular-Beam-Analysis" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="RCC-Rectangular-Beam-Analysis.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RCC-Rectangular-Beam-Analysis.exe" size="42496">
+      <assemblyIdentity name="RCC-Rectangular-Beam-Analysis" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>EggEC/urDLHpB2UjT5IWfeui0mA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=DESKTOP-FECH1CM\usman" issuerKeyHash="afcc964aa2d273685a7b6c33ba9bab98ddcd57a3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>bovZN5GCQP+GdB6/HrPXwlOcr3I=</DigestValue></Reference></SignedInfo><SignatureValue>TtdrpHIZ4yd34/XBnzEzGVEbeuQF1WXFB1H+Yd5WSwkgmpdpl4pozevkXt7upjFXs0hUWRCRdjE3YZG6MNLbvTJPpwX/ZGS0tHNujiC80Y1hyU1a22ojSIRh7BP/gmyQG1Pz+snobfAqecD20fBpJCvnb4aUUPCRY/hsQd4G03c=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>t0Sk+ROFZuxruYHrkDfkY3YxGaWXQTJM/2GFkR+QJazAaKFIlqkzE1lQZ9lV1faNHz36whbecJoXSUNeWBCGus2VcqT8WCb8Kj5nQT94ZGpkKpWZ617PsKs5baTiTWTEjrcalQfYVkIOQ2x2yN4R0FZcp776uxhnbCORYW7b6BE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="72af9c53c2d7b31ebf1e7486ff40829137d98b6e" Description="" Url=""><as:assemblyIdentity name="RCC-Rectangular-Beam-Analysis.exe" version="1.0.0.0" publicKeyToken="b8142d055bcf96c0" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-FECH1CM\usman</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>g89SbKSANgRgoU2Ty7/lLMg1pa0=</DigestValue></Reference></SignedInfo><SignatureValue>cVGDW5B+HJKuX2/yHb6dEowbEFMkyy6MrwxxiUG/A1hd6R65s59i+dq3h7+YSCe7oOd+omh+xd3v6rXzjJFQeyurTCe7ZttFLjmxJyfcMsOBFphwdsAUCzInt3OrmY07CKONSAdlyVIbLNcO3ti1Ajv3Bptlz41SgmeDeQ1BvwA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>t0Sk+ROFZuxruYHrkDfkY3YxGaWXQTJM/2GFkR+QJazAaKFIlqkzE1lQZ9lV1faNHz36whbecJoXSUNeWBCGus2VcqT8WCb8Kj5nQT94ZGpkKpWZ617PsKs5baTiTWTEjrcalQfYVkIOQ2x2yN4R0FZcp776uxhnbCORYW7b6BE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQVVQkMIwIP7VJ4pq0IEPXZDANBgkqhkiG9w0BAQUFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEYARQBDAEgAMQBDAE0AXAB1AHMAbQBhAG4wHhcNMjUwMzIzMTQ0NDU3WhcNMjYwMzIzMjA0NDU3WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEYARQBDAEgAMQBDAE0AXAB1AHMAbQBhAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALdEpPkThWbsa7mB65A35GN2MRmll0EyTP9hhZEfkCWswGihSJapMxNZUGfZVdX2jR89+sIW3nCaF0lDXlgQhrrNlXKk/Fgm/Co+Z0E/eGRqZCqVmetez7CrOW2k4k1kxI63GpUH2FZCDkNsdsjeEdBWXKe++rsYZ2wjkWFu2+gRAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAehleL5d12PNtb52wByHs/RQCXg1smXog/uJnytE+dB+MOh8D2ESKzjO+6omf/Y275uwFUlQFYHfCyYWRi2YRgjq6QwCH58usMEOlh4QmjQQTIoY43DO1Lpc2umpoHofM8ZfsXhiXrsKQJJEHgd7qg/VjP13NiH3ybeoXC+XTNPA=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
