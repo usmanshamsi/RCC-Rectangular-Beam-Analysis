@@ -5,4 +5,4 @@ Analysis of rectangular RCC beams and calculation of bending moment capacity.
 ![Screenshot](/Screenshots/main_form.png "Main Form")
 
 ## Download
-https://github.com/usmanshamsi/RCC-Rectangular-Beam-Analysis/releases/tag/release
+https://github.com/usmanshamsi/RCC-Rectangular-Beam-Analysis/releases
