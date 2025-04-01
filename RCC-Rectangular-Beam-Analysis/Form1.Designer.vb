@@ -72,6 +72,16 @@ Partial Class mainForm
         Me.outputMu_kipft = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.outputAsBalanced = New System.Windows.Forms.TextBox()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.outputAsMaximum = New System.Windows.Forms.TextBox()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.outputAsMinimum = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.outputAsProvided = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
@@ -232,9 +242,9 @@ Partial Class mainForm
         '
         'buttonCalculate
         '
-        Me.buttonCalculate.Location = New System.Drawing.Point(656, 102)
+        Me.buttonCalculate.Location = New System.Drawing.Point(723, 102)
         Me.buttonCalculate.Name = "buttonCalculate"
-        Me.buttonCalculate.Size = New System.Drawing.Size(147, 28)
+        Me.buttonCalculate.Size = New System.Drawing.Size(80, 28)
         Me.buttonCalculate.TabIndex = 12
         Me.buttonCalculate.Text = "Calculate"
         Me.buttonCalculate.UseVisualStyleBackColor = True
@@ -271,7 +281,7 @@ Partial Class mainForm
         Me.outputRhoProvided.BackColor = System.Drawing.Color.White
         Me.outputRhoProvided.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputRhoProvided.ForeColor = System.Drawing.Color.Blue
-        Me.outputRhoProvided.Location = New System.Drawing.Point(320, 157)
+        Me.outputRhoProvided.Location = New System.Drawing.Point(320, 160)
         Me.outputRhoProvided.Name = "outputRhoProvided"
         Me.outputRhoProvided.ReadOnly = True
         Me.outputRhoProvided.Size = New System.Drawing.Size(88, 22)
@@ -281,7 +291,7 @@ Partial Class mainForm
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(603, 157)
+        Me.Label17.Location = New System.Drawing.Point(414, 191)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(20, 16)
         Me.Label17.TabIndex = 26
@@ -292,7 +302,7 @@ Partial Class mainForm
         Me.outputRhoMinimum.BackColor = System.Drawing.Color.White
         Me.outputRhoMinimum.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputRhoMinimum.ForeColor = System.Drawing.Color.Blue
-        Me.outputRhoMinimum.Location = New System.Drawing.Point(509, 154)
+        Me.outputRhoMinimum.Location = New System.Drawing.Point(320, 188)
         Me.outputRhoMinimum.Name = "outputRhoMinimum"
         Me.outputRhoMinimum.ReadOnly = True
         Me.outputRhoMinimum.Size = New System.Drawing.Size(88, 22)
@@ -302,7 +312,7 @@ Partial Class mainForm
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(440, 160)
+        Me.Label18.Location = New System.Drawing.Point(251, 194)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(61, 16)
         Me.Label18.TabIndex = 24
@@ -311,7 +321,7 @@ Partial Class mainForm
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(603, 185)
+        Me.Label19.Location = New System.Drawing.Point(414, 219)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(20, 16)
         Me.Label19.TabIndex = 29
@@ -322,7 +332,7 @@ Partial Class mainForm
         Me.outputRhoMaximum.BackColor = System.Drawing.Color.White
         Me.outputRhoMaximum.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputRhoMaximum.ForeColor = System.Drawing.Color.Blue
-        Me.outputRhoMaximum.Location = New System.Drawing.Point(509, 182)
+        Me.outputRhoMaximum.Location = New System.Drawing.Point(320, 216)
         Me.outputRhoMaximum.Name = "outputRhoMaximum"
         Me.outputRhoMaximum.ReadOnly = True
         Me.outputRhoMaximum.Size = New System.Drawing.Size(88, 22)
@@ -332,7 +342,7 @@ Partial Class mainForm
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(440, 188)
+        Me.Label20.Location = New System.Drawing.Point(251, 222)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(65, 16)
         Me.Label20.TabIndex = 27
@@ -341,7 +351,7 @@ Partial Class mainForm
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(603, 213)
+        Me.Label21.Location = New System.Drawing.Point(414, 247)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(20, 16)
         Me.Label21.TabIndex = 32
@@ -352,7 +362,7 @@ Partial Class mainForm
         Me.outputRhoBalanced.BackColor = System.Drawing.Color.White
         Me.outputRhoBalanced.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputRhoBalanced.ForeColor = System.Drawing.Color.Blue
-        Me.outputRhoBalanced.Location = New System.Drawing.Point(509, 210)
+        Me.outputRhoBalanced.Location = New System.Drawing.Point(320, 244)
         Me.outputRhoBalanced.Name = "outputRhoBalanced"
         Me.outputRhoBalanced.ReadOnly = True
         Me.outputRhoBalanced.Size = New System.Drawing.Size(88, 22)
@@ -362,7 +372,7 @@ Partial Class mainForm
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(440, 216)
+        Me.Label22.Location = New System.Drawing.Point(251, 250)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(66, 16)
         Me.Label22.TabIndex = 30
@@ -372,16 +382,16 @@ Partial Class mainForm
         '
         Me.outputRhoMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputRhoMsg.ForeColor = System.Drawing.Color.Red
-        Me.outputRhoMsg.Location = New System.Drawing.Point(12, 188)
+        Me.outputRhoMsg.Location = New System.Drawing.Point(9, 20)
         Me.outputRhoMsg.Name = "outputRhoMsg"
-        Me.outputRhoMsg.Size = New System.Drawing.Size(390, 41)
+        Me.outputRhoMsg.Size = New System.Drawing.Size(192, 81)
         Me.outputRhoMsg.TabIndex = 33
         Me.outputRhoMsg.Text = " "
         '
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(333, 288)
+        Me.Label23.Location = New System.Drawing.Point(333, 317)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(32, 16)
         Me.Label23.TabIndex = 40
@@ -392,7 +402,7 @@ Partial Class mainForm
         Me.outputNeutralAxisDepth.BackColor = System.Drawing.Color.White
         Me.outputNeutralAxisDepth.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputNeutralAxisDepth.ForeColor = System.Drawing.Color.Blue
-        Me.outputNeutralAxisDepth.Location = New System.Drawing.Point(239, 285)
+        Me.outputNeutralAxisDepth.Location = New System.Drawing.Point(239, 314)
         Me.outputNeutralAxisDepth.Name = "outputNeutralAxisDepth"
         Me.outputNeutralAxisDepth.ReadOnly = True
         Me.outputNeutralAxisDepth.Size = New System.Drawing.Size(88, 22)
@@ -402,7 +412,7 @@ Partial Class mainForm
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(12, 288)
+        Me.Label24.Location = New System.Drawing.Point(12, 317)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(131, 16)
         Me.Label24.TabIndex = 38
@@ -411,7 +421,7 @@ Partial Class mainForm
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(333, 258)
+        Me.Label25.Location = New System.Drawing.Point(333, 287)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(32, 16)
         Me.Label25.TabIndex = 37
@@ -422,7 +432,7 @@ Partial Class mainForm
         Me.outputWhitneyBlockDepth.BackColor = System.Drawing.Color.White
         Me.outputWhitneyBlockDepth.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputWhitneyBlockDepth.ForeColor = System.Drawing.Color.Blue
-        Me.outputWhitneyBlockDepth.Location = New System.Drawing.Point(239, 255)
+        Me.outputWhitneyBlockDepth.Location = New System.Drawing.Point(239, 284)
         Me.outputWhitneyBlockDepth.Name = "outputWhitneyBlockDepth"
         Me.outputWhitneyBlockDepth.ReadOnly = True
         Me.outputWhitneyBlockDepth.Size = New System.Drawing.Size(88, 22)
@@ -432,7 +442,7 @@ Partial Class mainForm
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(12, 258)
+        Me.Label27.Location = New System.Drawing.Point(12, 287)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(224, 16)
         Me.Label27.TabIndex = 34
@@ -443,7 +453,7 @@ Partial Class mainForm
         Me.outputTensileStrain.BackColor = System.Drawing.Color.White
         Me.outputTensileStrain.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputTensileStrain.ForeColor = System.Drawing.Color.Blue
-        Me.outputTensileStrain.Location = New System.Drawing.Point(562, 255)
+        Me.outputTensileStrain.Location = New System.Drawing.Point(562, 284)
         Me.outputTensileStrain.Name = "outputTensileStrain"
         Me.outputTensileStrain.ReadOnly = True
         Me.outputTensileStrain.Size = New System.Drawing.Size(154, 22)
@@ -453,7 +463,7 @@ Partial Class mainForm
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(440, 258)
+        Me.Label28.Location = New System.Drawing.Point(440, 287)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(106, 16)
         Me.Label28.TabIndex = 41
@@ -464,7 +474,7 @@ Partial Class mainForm
         Me.outputPhi.BackColor = System.Drawing.Color.White
         Me.outputPhi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputPhi.ForeColor = System.Drawing.Color.Blue
-        Me.outputPhi.Location = New System.Drawing.Point(562, 285)
+        Me.outputPhi.Location = New System.Drawing.Point(562, 314)
         Me.outputPhi.Name = "outputPhi"
         Me.outputPhi.ReadOnly = True
         Me.outputPhi.Size = New System.Drawing.Size(154, 22)
@@ -474,7 +484,7 @@ Partial Class mainForm
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(440, 288)
+        Me.Label26.Location = New System.Drawing.Point(440, 317)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(92, 16)
         Me.Label26.TabIndex = 43
@@ -484,7 +494,7 @@ Partial Class mainForm
         '
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(446, 347)
+        Me.Label29.Location = New System.Drawing.Point(446, 376)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(54, 16)
         Me.Label29.TabIndex = 47
@@ -495,7 +505,7 @@ Partial Class mainForm
         Me.outputMu_lbinch.BackColor = System.Drawing.Color.White
         Me.outputMu_lbinch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputMu_lbinch.ForeColor = System.Drawing.Color.Blue
-        Me.outputMu_lbinch.Location = New System.Drawing.Point(305, 344)
+        Me.outputMu_lbinch.Location = New System.Drawing.Point(305, 373)
         Me.outputMu_lbinch.Name = "outputMu_lbinch"
         Me.outputMu_lbinch.ReadOnly = True
         Me.outputMu_lbinch.Size = New System.Drawing.Size(135, 22)
@@ -506,7 +516,7 @@ Partial Class mainForm
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(12, 347)
+        Me.Label30.Location = New System.Drawing.Point(12, 376)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(287, 16)
         Me.Label30.TabIndex = 45
@@ -516,7 +526,7 @@ Partial Class mainForm
         '
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(656, 347)
+        Me.Label31.Location = New System.Drawing.Point(656, 376)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(42, 16)
         Me.Label31.TabIndex = 49
@@ -527,7 +537,7 @@ Partial Class mainForm
         Me.outputMu_kipft.BackColor = System.Drawing.Color.White
         Me.outputMu_kipft.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.outputMu_kipft.ForeColor = System.Drawing.Color.Blue
-        Me.outputMu_kipft.Location = New System.Drawing.Point(515, 344)
+        Me.outputMu_kipft.Location = New System.Drawing.Point(515, 373)
         Me.outputMu_kipft.Name = "outputMu_kipft"
         Me.outputMu_kipft.ReadOnly = True
         Me.outputMu_kipft.Size = New System.Drawing.Size(135, 22)
@@ -537,7 +547,7 @@ Partial Class mainForm
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button1.Location = New System.Drawing.Point(12, 392)
+        Me.Button1.Location = New System.Drawing.Point(12, 420)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(84, 28)
         Me.Button1.TabIndex = 13
@@ -547,19 +557,123 @@ Partial Class mainForm
         'Button2
         '
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.Location = New System.Drawing.Point(719, 392)
+        Me.Button2.Location = New System.Drawing.Point(723, 420)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(84, 28)
         Me.Button2.TabIndex = 14
         Me.Button2.Text = "Close"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(543, 247)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(46, 16)
+        Me.Label1.TabIndex = 57
+        Me.Label1.Text = "inch^2"
+        '
+        'outputAsBalanced
+        '
+        Me.outputAsBalanced.BackColor = System.Drawing.Color.White
+        Me.outputAsBalanced.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.outputAsBalanced.ForeColor = System.Drawing.Color.Blue
+        Me.outputAsBalanced.Location = New System.Drawing.Point(449, 244)
+        Me.outputAsBalanced.Name = "outputAsBalanced"
+        Me.outputAsBalanced.ReadOnly = True
+        Me.outputAsBalanced.Size = New System.Drawing.Size(88, 22)
+        Me.outputAsBalanced.TabIndex = 56
+        Me.outputAsBalanced.TabStop = False
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(543, 219)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(46, 16)
+        Me.Label32.TabIndex = 55
+        Me.Label32.Text = "inch^2"
+        '
+        'outputAsMaximum
+        '
+        Me.outputAsMaximum.BackColor = System.Drawing.Color.White
+        Me.outputAsMaximum.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.outputAsMaximum.ForeColor = System.Drawing.Color.Blue
+        Me.outputAsMaximum.Location = New System.Drawing.Point(449, 216)
+        Me.outputAsMaximum.Name = "outputAsMaximum"
+        Me.outputAsMaximum.ReadOnly = True
+        Me.outputAsMaximum.Size = New System.Drawing.Size(88, 22)
+        Me.outputAsMaximum.TabIndex = 54
+        Me.outputAsMaximum.TabStop = False
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.Location = New System.Drawing.Point(543, 191)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(46, 16)
+        Me.Label33.TabIndex = 53
+        Me.Label33.Text = "inch^2"
+        '
+        'outputAsMinimum
+        '
+        Me.outputAsMinimum.BackColor = System.Drawing.Color.White
+        Me.outputAsMinimum.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.outputAsMinimum.ForeColor = System.Drawing.Color.Blue
+        Me.outputAsMinimum.Location = New System.Drawing.Point(449, 188)
+        Me.outputAsMinimum.Name = "outputAsMinimum"
+        Me.outputAsMinimum.ReadOnly = True
+        Me.outputAsMinimum.Size = New System.Drawing.Size(88, 22)
+        Me.outputAsMinimum.TabIndex = 52
+        Me.outputAsMinimum.TabStop = False
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(543, 160)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(46, 16)
+        Me.Label34.TabIndex = 51
+        Me.Label34.Text = "inch^2"
+        '
+        'outputAsProvided
+        '
+        Me.outputAsProvided.BackColor = System.Drawing.Color.White
+        Me.outputAsProvided.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.outputAsProvided.ForeColor = System.Drawing.Color.Blue
+        Me.outputAsProvided.Location = New System.Drawing.Point(449, 160)
+        Me.outputAsProvided.Name = "outputAsProvided"
+        Me.outputAsProvided.ReadOnly = True
+        Me.outputAsProvided.Size = New System.Drawing.Size(88, 22)
+        Me.outputAsProvided.TabIndex = 50
+        Me.outputAsProvided.TabStop = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.outputRhoMsg)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Red
+        Me.GroupBox1.Location = New System.Drawing.Point(595, 160)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(207, 106)
+        Me.GroupBox1.TabIndex = 58
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Error / Warning"
+        '
         'mainForm
         '
         Me.AcceptButton = Me.buttonCalculate
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(815, 432)
+        Me.ClientSize = New System.Drawing.Size(819, 460)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.outputAsBalanced)
+        Me.Controls.Add(Me.Label32)
+        Me.Controls.Add(Me.outputAsMaximum)
+        Me.Controls.Add(Me.Label33)
+        Me.Controls.Add(Me.outputAsMinimum)
+        Me.Controls.Add(Me.Label34)
+        Me.Controls.Add(Me.outputAsProvided)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label31)
@@ -577,7 +691,6 @@ Partial Class mainForm
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.outputWhitneyBlockDepth)
         Me.Controls.Add(Me.Label27)
-        Me.Controls.Add(Me.outputRhoMsg)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.outputRhoBalanced)
         Me.Controls.Add(Me.Label22)
@@ -616,6 +729,7 @@ Partial Class mainForm
         Me.MaximizeBox = False
         Me.Name = "mainForm"
         Me.Text = "RCC Rectangular Beam Analysis"
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -670,5 +784,14 @@ Partial Class mainForm
     Friend WithEvents outputMu_kipft As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents outputAsBalanced As System.Windows.Forms.TextBox
+    Friend WithEvents Label32 As System.Windows.Forms.Label
+    Friend WithEvents outputAsMaximum As System.Windows.Forms.TextBox
+    Friend WithEvents Label33 As System.Windows.Forms.Label
+    Friend WithEvents outputAsMinimum As System.Windows.Forms.TextBox
+    Friend WithEvents Label34 As System.Windows.Forms.Label
+    Friend WithEvents outputAsProvided As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 
 End Class

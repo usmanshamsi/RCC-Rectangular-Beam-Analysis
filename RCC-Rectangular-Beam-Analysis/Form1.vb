@@ -27,26 +27,30 @@
 
         Dim rho As Double = _as / (b * d)
         outputRhoProvided.Text = (100 * rho).ToString("0.00")
+        outputAsProvided.Text = (b * d * rho).ToString("0.00")
 
         Dim rhoMinimum As Double = Math.Max(3 * Math.Sqrt(fc) / fy, 200.0 / fy)
         outputRhoMinimum.Text = (100 * rhoMinimum).ToString("0.00")
+        outputAsMinimum.Text = (b * d * rhoMinimum).ToString("0.00")
 
         Dim rhoBalanced As Double = 0.85 * beta1 * (fc / fy) * (87000 / (87000 + fy))
         outputRhoBalanced.Text = (100 * rhoBalanced).ToString("0.00")
+        outputAsBalanced.Text = (b * d * rhoBalanced).ToString("0.00")
 
         Const modulus_of_Steel As Double = 29000000.0
 
         Dim rhoMaximum As Double = ((0.003 + fy / modulus_of_Steel) / 0.008) * rhoBalanced
         outputRhoMaximum.Text = (100 * rhoMaximum).ToString("0.00")
+        outputAsMaximum.Text = (b * d * rhoMaximum).ToString("0.00")
 
         '    CHECK RHO AGAINST RHO MAX AND RHO MIN
         outputRhoMsg.Text = ""
 
         If (rho > rhoMaximum) Then
             If (rho <= rhoBalanced) Then
-                outputRhoMsg.Text = "Warning: Provided reinforcement is more than maximum reinforcement limit."
+                outputRhoMsg.Text = "Provided reinforcement is more than the maximum reinforcement limit."
             Else
-                outputRhoMsg.Text = "Error: Provided reinforcement is more than balanced reinforcement limit."
+                outputRhoMsg.Text = "Provided reinforcement is more than the balanced reinforcement limit. Further calculations skipped."
 
                 outputWhitneyBlockDepth.Text = ""
                 outputNeutralAxisDepth.Text = ""
@@ -61,7 +65,7 @@
         End If
 
         If (rho < rhoMinimum) Then
-            outputRhoMsg.Text = "Warning: Provided reinforcment is less than minimum reinforcement limit."
+            outputRhoMsg.Text = "Provided reinforcment is less than the minimum reinforcement limit."
         End If
 
 

@@ -30,8 +30,8 @@
     <ErrorReportUrl>https://github.com/usmanshamsi/RCC-Rectangular-Beam-Analysis</ErrorReportUrl>
     <ProductName>RCC Rectangular Beam Analysis</ProductName>
     <PublisherName>Muhammad Usman Shamsi</PublisherName>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
